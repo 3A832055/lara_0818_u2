@@ -7,6 +7,10 @@ use App\Http\Controllers\HelloController;
 
 class HelloController extends Controller
 {
-    //
-    Route::get('hello/{name?}',[HelloController::class,'index'])->name('hello.index');
+    public function index($name = 'Everbody')
+    {
+        $data = ['name'=>$name];
+        return view('hello.index', $data);
+
+    }
 }
