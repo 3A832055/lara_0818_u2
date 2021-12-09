@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController1;
+use App\Http\Controllers\HelloController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +28,6 @@ Route::get('home1', function(){
 });*/
 
 Route::get('home1', [HomeController1::class, 'index']);
+
+Route::get('hello/{name?}', [HelloController::class, 'index'])->name('hello.index');
 
