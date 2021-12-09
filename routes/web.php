@@ -22,6 +22,6 @@ Route::get('home', function () {
 });
 
 Route::get('home1', function(){
-    return view('home1');
+    return view('home1.index');
 });
 
