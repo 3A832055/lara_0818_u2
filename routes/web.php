@@ -21,3 +21,7 @@ Route::get('home', function () {
     return view('home.index');
 });
 
+Route::get('home1', function(){
+    return view('home1');
+});
+
